@@ -1,0 +1,24 @@
+#rsvp {
+  padding: 3rem 1rem;
+}
+
+/* RSVP Button */
+.rsvp-button {
+  background: var(--sage-green);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(142, 139, 99, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.rsvp-button:hover {
+  background: var(--dusty-rose);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(203, 133, 135, 0.4);
+}

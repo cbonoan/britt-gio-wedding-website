@@ -1,0 +1,128 @@
+/* Registry Page Styles */
+#registry {
+  padding: 4.5rem 1.5rem 6rem;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.registry-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 22rem;
+}
+
+.registry-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.registry-header .divider {
+  width: 6rem;
+  height: 4px;
+  margin: 0.75rem auto 0;
+  background: linear-gradient(90deg, var(--sage-green), var(--dusty-rose));
+  border-radius: 2px;
+  opacity: 0.9;
+}
+
+.registry-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  background-color: rgba(246, 244, 239, 0.9);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(142, 139, 99, 0.12);
+  border: 1px solid rgba(203, 133, 135, 0.06);
+}
+
+.registry-info {
+  padding: 2rem;
+}
+
+.registry-info h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.registry-info p {
+  margin-bottom: 1.25rem;
+}
+
+.registry-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.registry-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.9rem 1.6rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(142, 139, 99, 0.12);
+}
+
+.registry-secondary {
+  padding: 0.75rem 1.25rem;
+}
+
+.registry-quote {
+  margin-top: 0.5rem;
+}
+
+.registry-visual {
+  min-height: 260px;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.08)
+    ),
+    url("/images/24.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Decorative subtle border using the site's palette */
+.registry-card::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Responsive: two-column layout on larger screens */
+@media (min-width: 768px) {
+  .registry-container {
+    margin-top: 0;
+  }
+
+  .registry-card {
+    grid-template-columns: 1fr 420px;
+    align-items: stretch;
+  }
+
+  .registry-info {
+    padding: 3rem;
+  }
+
+  .registry-visual {
+    min-height: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .registry-container {
+    padding: 3rem;
+  }
+
+  .registry-card {
+    border-radius: 18px;
+  }
+}

@@ -13,9 +13,15 @@ html {
 }
 
 body {
+  height: 100vh;
+  background-color: #fafaf8;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 img,
@@ -74,4 +80,11 @@ button {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  margin: 0 auto;
 }

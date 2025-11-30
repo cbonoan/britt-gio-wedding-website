@@ -1,0 +1,66 @@
+#our-story {
+  margin-top: 1rem;
+
+  .our-story-container {
+    width: 100%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      text-align: center;
+    }
+  }
+
+  .groom-section,
+  .bride-section {
+    text-align: center;
+  }
+
+  .couple-image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .couple-image {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      box-shadow: 0 8px 24px rgba(24, 17, 17, 0.15);
+      border: 12px solid #eddada;
+      position: relative;
+
+      @media (max-width: 768px) {
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+.our-story-text {
+  width: 100%;
+  padding: 5rem 2rem;
+  background-color: var(--secondary-bg);
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+@media (width >= 768px) and (width <= 1200px) {
+  .our-story-text {
+    padding: 2rem 10rem;
+  }
+}
+
+@media (width > 1200px) {
+  .our-story-text {
+    padding: 8rem 20rem;
+  }
+}

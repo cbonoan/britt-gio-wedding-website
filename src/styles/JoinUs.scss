@@ -1,0 +1,15 @@
+#join-us {
+  padding: 0 1rem;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media screen and (width >= 768px) {
+  #join-us {
+    padding: 1rem 10rem;
+  }
+}

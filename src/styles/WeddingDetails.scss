@@ -1,0 +1,41 @@
+#wedding-details {
+  padding: 8rem 2rem;
+  background-color: var(--secondary-bg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    color: var(--primary-text);
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  #venue-details {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (width >= 768px) {
+  #wedding-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    h3 {
+      font-size: 3rem;
+    }
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    #venue-details {
+      margin-top: 0;
+    }
+  }
+}
