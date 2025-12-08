@@ -1,0 +1,78 @@
+@import "./colors.scss";
+
+.dress-code-section {
+  padding: 2rem 1rem;
+  background-color: var(--secondary-bg);
+}
+
+.dress-code-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dress-code-section h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  color: var(--primary-text);
+}
+
+.dress-code-section .lead {
+  margin: 0 0 2rem 0;
+  color: var(--secondary-text);
+}
+
+/* Pinterest-style masonry grid */
+.dress-masonry {
+  column-count: 1;
+  column-gap: 1.5rem;
+  width: 100%;
+}
+
+.dress-item {
+  margin: 0 0 1.5rem 0;
+  break-inside: avoid;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(142, 139, 99, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.dress-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(142, 139, 99, 0.2);
+}
+
+.dress-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 640px) {
+  .dress-code-section {
+    margin-top: 34rem;
+  }
+  .dress-masonry {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .dress-code-section {
+    margin-top: 37rem;
+  }
+  .dress-masonry {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1280px) {
+  .dress-code-section {
+    margin-top: 18rem;
+  }
+  .dress-masonry {
+    column-count: 4;
+  }
+}

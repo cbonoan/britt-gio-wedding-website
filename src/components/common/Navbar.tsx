@@ -54,6 +54,9 @@ export const Navbar = () => {
           >
             Our Story
           </button>
+          <Link className="nav-link" to="/dress-code">
+            Dress Code
+          </Link>
           <Link className="nav-link" to="/registry">
             Registry
           </Link>
@@ -93,6 +96,13 @@ export const Navbar = () => {
           >
             Our Story
           </button>
+          <Link
+            className="mobile-nav-link"
+            to="/dress-code"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Dress Code
+          </Link>
           <Link
             className="mobile-nav-link"
             to="/registry"

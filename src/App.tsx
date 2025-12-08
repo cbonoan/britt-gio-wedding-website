@@ -4,6 +4,7 @@ import { Navbar } from "./components/common/Navbar";
 import { Home } from "./components/pages/Home";
 import { Story } from "./components/pages/Story";
 import { Registry } from "./components/pages/Registry";
+import DressCode from "./components/pages/DressCode";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/story" element={<Story />} />
         <Route path="/registry" element={<Registry />} />
+        <Route path="/dress-code" element={<DressCode />} />
       </Routes>
     </Router>
   );
